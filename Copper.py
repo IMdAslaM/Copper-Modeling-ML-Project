@@ -47,7 +47,7 @@ def page_price():
         diff_date_pred=st.text_input('Enter the Differnce between Delivery date and Manufactured date in days')
     
     #loading a knowledge file for ExtratreeRegression
-    with open('knowlege_pkl_ExtratreeReg', 'rb') as file:
+    with open('knowlege_pkl_LinearReg', 'rb') as file:
         model_ExtratreeReg=pickle.load(file)
 
     if st.button('Predict Selling Price'):#button
