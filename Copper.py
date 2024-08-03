@@ -29,13 +29,13 @@ def page_price():
     st.markdown("""# <span style="color:aqua">Predict Selling Price</span>""",unsafe_allow_html=True)
     col1,col2 = st.columns(2)
     with col1:
-        quantity_tons_pred=st.text_input('Enter  Quantity in tons')
+        quantity_tons_pred=st.text_input('Enter  Quantity in Tons (Range: 0.1 - 1000000000)')
         customer_pred=st.text_input('Enter  CustomerId (Example: 30071586)')#getting a input from User
         country_pred=st.text_input('Enter  Country (Range: 25-113)')
         status_pred=st.text_input('Enter  Status as either "0" or "1", "WON" means "1" and "LOST" means "0"')
         item_type_pred=st.text_input('Enter  item_type (Range: 0-6)')
         application_pred=st.text_input('Enter  Application (Range: 2-87)')
-        thickness_pred=st.text_input('Enter  Thickness')
+        thickness_pred=st.text_input('Enter  Thickness (Range: 0.1 - 6)')
         width_pred=st.text_input('Enter  Width (Range: 700-1980)')
     with col2:
         product_ref_pred=st.text_input('Enter  Product_ref (Range: 611728-1722207579)')
@@ -78,12 +78,12 @@ def page_status():
     st.markdown("""# <span style="color:aqua">Predict Status</span>""",unsafe_allow_html=True)
     col1,col2 = st.columns(2)
     with col1:
-        quantity_tons_pred=st.text_input('Enter  Quantity_tons')
+        quantity_tons_pred=st.text_input('Enter  Quantity in Tons (Range: 0.1 - 1000000000)')
         customer_pred=st.text_input('Enter  CustomerId (Example: 30071586)')#getting a input from User
         country_pred=st.text_input('Enter  Country (Range: 25-113)')
         item_type_pred=st.text_input('Enter  item_type (Range: 0-6)')
         application_pred=st.text_input('Enter  Application (Range: 2-87)')
-        thickness_pred=st.text_input('Enter  Thickness')
+        thickness_pred=st.text_input('Enter  Thickness (Range: 0.18 - 6)')
         width_pred=st.text_input('Enter  Width (Range: 700-1980)')
         product_ref_pred=st.text_input('Enter  Product_ref (Range: 611728-1722207579)')
     with col2:
