@@ -27,6 +27,7 @@ def page_home():
 def page_price():
     #creating 2 columns in streamlit page for getting input from user
     st.markdown("""# <span style="color:aqua">Predict Selling Price</span>""",unsafe_allow_html=True)
+    st.markdown(" ")
     col1,col2 = st.columns(2)
     with col1:
         quantity_tons_pred=st.text_input('Enter  Quantity in Tons (Range: 0.1 - 1000000000)')
@@ -76,6 +77,7 @@ def page_price():
 def page_status():
     #creating 2 columns in streamlit page for getting input from user
     st.markdown("""# <span style="color:aqua">Predict Status</span>""",unsafe_allow_html=True)
+    st.markdown(" ")
     col1,col2 = st.columns(2)
     with col1:
         quantity_tons_pred=st.text_input('Enter  Quantity in Tons (Range: 0.1 - 1000000000)')
