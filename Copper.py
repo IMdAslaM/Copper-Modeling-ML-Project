@@ -13,6 +13,7 @@ from sklearn.pipeline import Pipeline
 # from imblearn.pipeline import Pipeline
 # from sklearn.linear_model import LogisticRegression
 import pickle
+import base64
 
 
 def page_home():
